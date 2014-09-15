@@ -39,3 +39,4 @@ RUN wget https://github.com/jmuhammed/CricketTest/archive/master.zip
 RUN unzip master.zip.1 -d /usr/mavenapp
 WORKDIR /usr/mavenapp/CricketTest-master/
 RUN cp /run.sh  /usr/mavenapp/CricketTest-master/
+RUN apt-get install -y mysql-server-5.6
